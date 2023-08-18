@@ -1,0 +1,120 @@
+:root {
+    --color-950: #400d02;
+    --color-700: #d03300;
+    --color-500: #ff6604;
+    --color-100: #ffebd2;
+    --color-50: #fff6ec;
+    --yellow: #e9c46a;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.root {
+    height: 100%;
+    width: 100%;
+    background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
+    background-image:
+        radial-gradient(49% 81% at 45% 47%, #FFE20345 0%, #073AFF00 100%),
+        radial-gradient(113% 91% at 17% -2%, #FF5A00FF 1%, #FF000000 99%),
+        radial-gradient(142% 91% at 83% 7%, #FFDB00FF 1%, #FF000000 99%),
+        radial-gradient(142% 91% at -6% 74%, #FF0049FF 1%, #FF000000 99%),
+        radial-gradient(142% 91% at 111% 84%, #FF7000FF 0%, #FF0000FF 100%);
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+    padding: 20px;
+}
+
+/* Display */
+.display {
+    display: flex;
+    flex: 0 1 auto;
+    gap: 30px;
+    min-width: 100vh;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.display .announce,
+.display .score {
+    min-height: 40vh;
+    background-color: white;
+    border: solid var(--color-950) 7px;
+    border-radius: 10px;
+}
+
+.announce {
+    width: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.score {
+    width: 40vh;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 30px;
+    text-align: center;
+}
+
+.score .title {
+    border: 0;
+    background-color: var(--yellow);
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* Buttons */
+.buttons {
+    height: 20vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.buttons button,
+.restart {
+    background-color: white;
+    color: var(--color-700);
+    border: solid var(--color-700) 4px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.buttons button {
+    padding: 50px;
+}
+
+.restart {
+    padding: 10px;
+}
+
+.buttons button:hover,
+.restart:hover {
+    background-color: var(--yellow);
+    color: white;
+}
+
+.buttons button:active,
+.restart:active {
+    background-color: var(--color-100);
+    color: var(--color-500);
+}
