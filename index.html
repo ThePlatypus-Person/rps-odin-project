@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="./style.css">
-        <script src="./rps.js" defer></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <body>
-        <div class="root">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <div class="header">Rock Paper Scissors</div>
 
-            <div class="display">
-                <div class="announce">
-                </div>
-                <div class="score">
-                    <div class="title">
-                        Scoreboard
-                    </div>
-                    <div class="player">
-                    </div>
-                    <div class="computer">
-                    </div>
-                </div>
-            </div>
-
-            <div class="buttons">
-                <button id="rock">Rock</button>
-                <button id="paper">Paper</button>
-                <button id="scissors">Scissors</button>
-            </div>
-
+    <div class="rps">
+        <div class="highlight">
+            <h3>First to score 5 points wins!</h3>
         </div>
-    </body>
+
+        <div class="player-side">
+            <h3>Player: 0</h3>
+        </div>
+        <div class="computer-side">
+            <h3>Computer: 0</h3>
+        </div>
+
+        <div class="selection">
+            <div class="choice"><img src="./img/HandRockRegular.svg" alt="Rock" data-key="0"></div>
+            <div class="choice"><img src="./img/HandPaperRegular.svg" alt="Paper" data-key="1"></div>
+            <div class="choice"><img src="./img/HandScissorsRegular.svg" alt="Scissors" data-key="2"></div>
+        </div>
+    </div>
+</body>
 </html>
